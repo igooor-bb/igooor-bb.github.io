@@ -7,7 +7,11 @@
 $base-font-family: Roboto, sans-serif;
 $monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
 $base-font-size:   16px;
-$base-font-weight: 400;
+
+$bold-weight: 700;
+$normal-weight: 400;
+$base-font-weight: $normal-weight;
+
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.85;
 

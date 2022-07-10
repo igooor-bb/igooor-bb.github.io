@@ -16,10 +16,12 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  box-sizing: border-box;
   font-kerning: normal;
   word-wrap: break-word;
 }
@@ -28,6 +30,12 @@ table {
   width: 100%;
   margin: 0 0 20px 0;
   text-align: left;
+}
+
+strong,
+b {
+  font-weight: $bold-weight;
+  color: white;
 }
 
 /**
@@ -157,6 +165,13 @@ blockquote {
   pre, code {
     color: $text-color;
   }
+
+  strong,
+  b {
+    font-weight: $bold-weight;
+    color: $grey-color;
+  }
+
 }
 
 

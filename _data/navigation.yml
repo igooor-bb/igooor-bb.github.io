@@ -1,0 +1,7 @@
+main:
+  - title: "about"
+    url: /about/
+  - title: "archive"
+    url: /archive/
+  - title: "github"
+    url: https://github.com/igooor-bb

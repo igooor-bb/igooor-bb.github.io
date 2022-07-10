@@ -1,0 +1,46 @@
+title: "igooor_bb"
+author: Igor Belov
+description: Personal blog about development and more
+baseurl: ""
+url: "https://igooor-bb.github.io"
+lang: en
+timezone: UTC
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+email: igooor.ww@gmail.com
+github_url: https://github.com/igooor-bb
+linkedin_url: https://www.linkedin.com/in/igooorbb/
+twitter_url: https://twitter.com/igooor_bb
+
+twitter_username: igooor_bb
+comments: false
+
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+markdown: kramdown
+excerpt_separator: "<!-- more -->"
+
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 3
+
+kramdown:
+  auto_ids: true
+  enable_coderay: false
+  entity_output: as_char
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/

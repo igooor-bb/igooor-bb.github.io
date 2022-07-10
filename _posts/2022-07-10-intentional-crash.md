@@ -1,7 +1,6 @@
 ---
 layout: post
 author: Igor Belov
-tags: Swift
 title: Ways to cause an intentional crash in Swift
 ---
 

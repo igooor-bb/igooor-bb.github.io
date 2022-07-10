@@ -10,6 +10,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - LICENSE
+  - README.md
 
 email: igooor.ww@gmail.com
 github_url: https://github.com/igooor-bb
@@ -18,6 +20,8 @@ twitter_url: https://twitter.com/igooor_bb
 
 twitter_username: igooor_bb
 comments: false
+
+google_analytics: G-121JE4Z2KG
 
 plugins:
   - jekyll-archives

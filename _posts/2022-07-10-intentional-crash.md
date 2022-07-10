@@ -2,6 +2,10 @@
 layout: post
 author: Igor Belov
 title: Ways to cause an intentional crash in Swift
+category: dev
+tags:
+  - ios
+  - swift
 ---
 
 Sometimes in development we have the task of causing an **intentional crash of an application** when a condition occurs. This is usually used to debug a piece of code that the user should never get into, or to verify that your [Firebase Crashlytics][firebase] configuration works, for example. 

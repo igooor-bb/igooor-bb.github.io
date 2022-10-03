@@ -1,0 +1,22 @@
+name: Spell Checking
+
+on:
+  pull_request:
+    paths:
+      - '_posts/**.md'
+
+jobs:
+  check-spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Aspell
+        run: sudo apt install -y aspell
+      - name: Run Spell Checker
+        run: |
+          for file in _posts/*.md; do
+              echo "### $file" >> $GITHUB_STEP_SUMMARY
+              echo -en "\n" >> $GITHUB_STEP_SUMMARY
+              cat "$file" | aspell list --mode=markdown --lang=en --encoding utf-8 | sed -e 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          done
+      
